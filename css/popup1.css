@@ -1,0 +1,113 @@
+:root{
+    --blue: #1F3B9D ; 
+    --white : rgb(252, 247, 247);
+    --brown: #752C1D;
+}
+
+#maske {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+  }  
+  #popup .window {
+    position:absolute;
+    left:0;
+    top:0;
+    width:620px;
+    height:570px;
+    display:none;
+    z-index:9999;
+    padding:0px;
+    border-radius: 15px;
+    text-align: center;
+    background-color:#000;
+  }
+  #popup #dialog {
+    width:400px; 
+    height:auto;
+    padding:0px;
+    background-color:#ffffff;
+    font-family: 'Segoe UI Light', sans-serif;
+    font-size: 15pt;
+  }
+   
+   
+  #popup_icerik{
+    font-family: "Segoe UI", sans-serif;
+    font-size: 12px;
+    text-align: left;
+    position: relative;
+    
+  }
+  #popup_icerik .icerik-text{
+    position: absolute;
+    text-align: center;
+    top: 8%;
+    left: 5%;
+    background-color: var(--blue);
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  #popup_icerik .icerik-text a{
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+  }
+  #popup_icerik img{
+      width: 100%;
+      opacity: 1;
+  }
+
+  #popupfoot{
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16pt;
+      padding: 10px 20px;
+      
+  }
+  #popupfoot a{
+  text-decoration: none;
+  padding:5px 10px 5px 10px;
+  font-size: 1rem;
+  color: #912592;
+  opacity: 1;
+  }
+  .agree:hover{
+    background-color: lightblue ;
+    color: white;
+  }
+  .popupoption:hover{
+  background-color:#000;
+  color: #FFF;
+  padding:5px;
+  }
+  .popupoption2:hover{
+  color: black;
+  }
+
+@media screen and (max-width:380px){
+    #popup #dialog {
+        width:300px; 
+        height:auto;
+        padding:0px;
+        background-color:#ffffff;
+        font-family: 'Segoe UI Light', sans-serif;
+        font-size: 15pt;
+      }
+}
+@media screen and (max-width:500px) and (min-width:371px){
+    #popup #dialog {
+        width:350px; 
+        height:auto;
+        padding:0px;
+        background-color:#ffffff;
+        font-family: 'Segoe UI Light', sans-serif;
+        font-size: 15pt;
+      }
+}
+
